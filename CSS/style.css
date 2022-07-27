@@ -1,0 +1,3153 @@
+/* Inicio de font-face */
+@font-face {
+	font-family: "FuentePrincipal";
+	src: url("../Fuentes/coolvetica.otf");
+}
+
+@font-face {
+	font-family: "FuenteSecundaria";
+	src: url("../Fuentes/RomanSerif.ttf");
+}
+
+@font-face {
+	font-family: "FuenteTerciaria";
+	src: url("../Fuentes/Zabal.otf");
+}
+
+.PrimerTitulo {
+	font-family: "FuentePrincipal";
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+}
+
+.SegundoTitulo {
+	font-family: "FuenteSecundaria";
+	color: rgb(0, 0, 0);
+}
+
+.PrimerTituloCon {
+	font-family: "FuentePrincipal";
+	color: rgb(0, 0, 0);
+	font-size: 45px;
+}
+
+.Sangria{
+	margin-left: 10px;
+}
+
+.TituloLink {
+	font-family: "FuenteSecundaria";
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	font-weight: bold;
+}
+/* Final de font-face */
+
+
+/* Inicio del reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Final del reset */
+
+
+/* ----⛔Cosas de Form⛔---- */
+.TituloForm {
+	font-family: "FuentePrincipal";
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+}
+
+.TituloSecForm{
+	font-family: "FuenteSecundaria";
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.Bar{
+	background-color: rgb(228, 228, 228);
+	border-radius: 10px;
+	width: 300px;
+	height: 30px;
+    border: solid black 3px;
+}
+
+::placeholder{
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+	font-family: "FuenteSecundaria";
+}
+
+.options{
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+	font-family: "FuenteSecundaria";
+}
+
+.BtEnviar{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: solid black 3px;
+	background-color: rgb(0, 255, 255);
+}
+
+.fieldsetFORM{
+	border: solid black 3px;
+}
+/* ----⛔Cosas de Form⛔---- */
+
+
+/* Inicio elementos de menú */
+.Enlaces {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ElementLi {
+    display: inline;
+    padding: 10px;
+}
+
+a{
+	color: rgb(180, 179, 179);
+	font-size: 20px;
+}
+/* Final elementos de menú */
+
+/* ✅ Inicio de grid-container ✅  */
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	" header header header"
+	" menú menú menú"
+	" main main main"
+	" footer footer footer";
+	grid-template-rows: 80px 50px 569px 90px;
+	grid-template-columns: 200px;
+   }
+
+header{
+    grid-area: header;
+	background-image: url("../Imagenes/Header-y-Footer/HeaderFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.menú{
+    grid-area: menú;
+	background-color: rgb(39, 38, 38);
+}
+
+ .main{
+	grid-area: main;
+	overflow-y: scroll;
+	background-image: url("../Imagenes/Fondos/FondoFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+ footer{
+    grid-area: footer; 
+	background-image: url("../Imagenes/Header-y-Footer/FooterFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+
+.mainCon{
+	background-image: url("../Imagenes/Fondos/OtroFondoFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.MainMN{
+	background-image: url("../Imagenes/Fondos/OtroFondoFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* ✅ Final de grid-container ✅  */
+
+
+/* ✅ Inicio de Media query Mobile ✅  */
+@media screen and (max-width: 768px) {
+	.grid-container {
+		height: 100vh;
+		display: grid;
+		grid-template-areas: 
+		" header header header"
+		" menú menú menú"
+		" main main main"
+		" footer footer footer";
+		/* grid-template-rows: 70px 50px 455px 134px 70px; */
+		grid-template-rows: 80px 50px 569px 90px;
+	   }
+
+	   .PrimerTitulo {
+		font-family: "FuentePrincipal";
+		color: rgb(0, 0, 0);
+		font-size: 25px;
+	}
+
+	   .main{
+		display: grid;
+		grid-template-areas: 
+			" Espacio1"
+			" Fila1"
+			" Espacio2"
+			" Fila2"
+			" Espacio3"
+			" Fila3"
+			" Espacio4"
+			" Fila4"
+			" Espacio5"
+			" Fila5"
+			" Espacio6"
+			" Fila6"
+			"Espacio7";
+			overflow-y: scroll;
+			grid-template-rows: 30px 478px 30px 478px 30px 478px 
+			30px 478px 30px 478px 30px 478px 30px;
+		}
+
+/* -------- 📛Fila1📛 -------- */
+.Espacio1{
+    grid-area: Espacio1;
+}
+
+.Fila1{
+	display: grid;
+	grid-area: Fila1;
+	grid-template-areas: 
+	" EspCol1_1 Medio1 EspCol1_2";
+    grid-template-columns: 2fr 25fr 2fr;
+}
+
+.EspCol1_1{
+	grid-area: EspCol1_1;
+   }
+
+   .Medio1{
+	grid-area: Medio1;
+   }
+
+   .EspCol1_2{
+	grid-area: EspCol1_2;
+   }
+/* -------- 📛Fila1📛 -------- */
+/* -------- 🟦Medio1🟦 -------- */
+.Medio1{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro1"
+	" Texto1";
+    grid-template-rows: 210px 242px;
+   }
+
+    .Cuadro1{
+	grid-area: Cuadro1;
+	display: grid;
+	grid-template-areas: 
+	" EspacioMovil1 EspacioMovil2 EspacioMovil3";
+    grid-template-columns: 3fr 10fr 3fr;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+.Cuadro1:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.EspacioMovil1{
+        grid-area: EspacioMovil1;
+	}
+
+	.EspacioMovil2{
+        grid-area: EspacioMovil2;
+	}
+
+	.ImagenCuadro{
+		width: 175px;
+		height: 175px;
+		border-radius: 50px;
+		position: relative;
+		left: 27px;
+		top: 18px;
+		
+		background-image: url("../Imagenes/Postres/Quesillo.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.EspacioMovil3{
+        grid-area: EspacioMovil3;
+	}
+
+	.Texto1{
+		grid-area: Texto1;
+		border-radius: 15px;
+		height: 269px;
+	}
+/* -------- 🟦Medio1🟦 -------- */
+
+
+/* ------------------------------------------------  */
+/* -------- 📛Fila2📛 -------- */
+.Espacio2{
+    grid-area: Espacio2;
+}
+
+.Fila2{
+	display: grid;
+	grid-area: Fila2;
+	grid-template-areas: 
+	" EspCol2_1 Medio2 EspCol2_2";
+    grid-template-columns: 2fr 25fr 2fr;
+}
+
+.EspCol2_1{
+	grid-area: EspCol2_1;
+   }
+
+   .Medio2{
+	grid-area: Medio2;
+   }
+
+   .EspCol2_2{
+	grid-area: EspCol2_2;
+   }
+/* -------- 📛Fila2📛 -------- */
+/* -------- 🟦Medio2🟦 -------- */
+.Medio2{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro2"
+	" Texto2";
+    grid-template-rows: 210px 242px;
+   }
+
+    .Cuadro2{
+	grid-area: Cuadro2;
+	display: grid;
+	grid-template-areas: 
+	" EspacioMovil2_1 EspacioMovil2_2 EspacioMovil2_3";
+    grid-template-columns: 3fr 10fr 3fr;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+.Cuadro2:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.EspacioMovil2_1{
+        grid-area: EspacioMovil2_1;
+	}
+
+	.EspacioMovil2_2{
+        grid-area: EspacioMovil2_2;
+	}
+
+	.ImagenCuadro2{
+		width: 175px;
+		height: 175px;
+		border-radius: 50px;
+		position: relative;
+		left: 27px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Tartas.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.EspacioMovil2_3{
+        grid-area: EspacioMovil2_3;
+	}
+
+	.Texto2{
+		grid-area: Texto2;
+		border-radius: 15px;
+		height: 269px;
+	}
+/* -------- 🟦Medio2🟦 -------- */
+/* ------------------------------------------------  */
+
+
+/* ------------------------------------------------  */
+/* -------- 📛Fila3📛 -------- */
+.Espacio3{
+    grid-area: Espacio3;
+}
+
+.Fila3{
+	display: grid;
+	grid-area: Fila3;
+	grid-template-areas: 
+	" EspCol3_1 Medio3 EspCol3_2";
+    grid-template-columns: 2fr 25fr 2fr;
+}
+
+.EspCol3_1{
+	grid-area: EspCol3_1;
+   }
+
+   .Medio3{
+	grid-area: Medio3;
+   }
+
+   .EspCol3_2{
+	grid-area: EspCol3_2;
+   }
+/* -------- 📛Fila3📛 -------- */
+/* -------- 🟦Medio3🟦 -------- */
+.Medio3{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro3"
+	" Texto3";
+    grid-template-rows: 210px 242px;
+   }
+
+    .Cuadro3{
+	grid-area: Cuadro3;
+	display: grid;
+	grid-template-areas: 
+	" EspacioMovil3_1 EspacioMovil3_2 EspacioMovil3_3";
+    grid-template-columns: 3fr 10fr 3fr;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+.Cuadro3:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.EspacioMovil3_1{
+        grid-area: EspacioMovil3_1;
+	}
+
+	.EspacioMovil3_2{
+        grid-area: EspacioMovil3_2;
+	}
+
+	.ImagenCuadro3{
+		width: 175px;
+		height: 175px;
+		border-radius: 50px;
+		position: relative;
+		left: 27px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Donas.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.EspacioMovil3_3{
+        grid-area: EspacioMovil3_3;
+	}
+
+	.Texto3{
+		grid-area: Texto3;
+		border-radius: 15px;
+		height: 269px;
+	}
+/* -------- 🟦Medio3🟦 -------- */
+/* ------------------------------------------------  */
+
+
+/* ------------------------------------------------  */
+/* -------- 📛Fila4📛 -------- */
+.Espacio4{
+    grid-area: Espacio4;
+}
+
+.Fila4{
+	display: grid;
+	grid-area: Fila4;
+	grid-template-areas: 
+	" EspCol4_1 Medio4 EspCol4_2";
+    grid-template-columns: 2fr 25fr 2fr;
+}
+
+.EspCol4_1{
+	grid-area: EspCol4_1;
+   }
+
+   .Medio4{
+	grid-area: Medio4;
+   }
+
+   .EspCol4_2{
+	grid-area: EspCol4_2;
+   }
+/* -------- 📛Fila4📛 -------- */
+/* -------- 🟦Medio4🟦 -------- */
+.Medio4{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro4"
+	" Texto4";
+    grid-template-rows: 210px 242px;
+   }
+
+    .Cuadro4{
+	grid-area: Cuadro4;
+	display: grid;
+	grid-template-areas: 
+	" EspacioMovil4_1 EspacioMovil4_2 EspacioMovil4_3";
+    grid-template-columns: 3fr 10fr 3fr;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+.Cuadro4:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.EspacioMovil4_1{
+        grid-area: EspacioMovil4_1;
+	}
+
+	.EspacioMovil4_2{
+        grid-area: EspacioMovil4_2;
+	}
+
+	.ImagenCuadro4{
+		width: 175px;
+		height: 175px;
+		border-radius: 50px;
+		position: relative;
+		left: 27px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Helado.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.EspacioMovil4_3{
+        grid-area: EspacioMovil4_3;
+	}
+
+	.Texto4{
+		grid-area: Texto4;
+		border-radius: 15px;
+		height: 269px;
+	}
+/* -------- 🟦Medio4🟦 -------- */
+/* ------------------------------------------------  */
+
+
+/* ------------------------------------------------  */
+/* -------- 📛Fila5📛 -------- */
+.Espacio5{
+    grid-area: Espacio5;
+}
+
+.Fila5{
+	display: grid;
+	grid-area: Fila5;
+	grid-template-areas: 
+	" EspCol5_1 Medio5 EspCol5_2";
+    grid-template-columns: 2fr 25fr 2fr;
+}
+
+.EspCol5_1{
+	grid-area: EspCol5_1;
+   }
+
+   .Medio5{
+	grid-area: Medio5;
+   }
+
+   .EspCol5_2{
+	grid-area: EspCol5_2;
+   }
+/* -------- 📛Fila5📛 -------- */
+/* -------- 🟦Medio5🟦 -------- */
+.Medio5{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro5"
+	" Texto5";
+    grid-template-rows: 210px 242px;
+   }
+
+    .Cuadro5{
+	grid-area: Cuadro5;
+	display: grid;
+	grid-template-areas: 
+	" EspacioMovil5_1 EspacioMovil5_2 EspacioMovil5_3";
+    grid-template-columns: 3fr 10fr 3fr;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+.Cuadro5:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.EspacioMovil5_1{
+        grid-area: EspacioMovil5_1;
+	}
+
+	.EspacioMovil5_2{
+        grid-area: EspacioMovil5_2;
+	}
+
+	.ImagenCuadro5{
+		width: 175px;
+		height: 175px;
+		border-radius: 50px;
+		position: relative;
+		left: 27px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/PieDeLimon.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.EspacioMovil5_3{
+        grid-area: EspacioMovil5_3;
+	}
+
+	.Texto5{
+		grid-area: Texto5;
+		border-radius: 15px;
+		height: 269px;
+	}
+/* -------- 🟦Medio5🟦 -------- */
+/* ------------------------------------------------  */
+
+
+/* ------------------------------------------------  */
+/* -------- 📛Fila6📛 -------- */
+.Espacio6{
+    grid-area: Espacio6;
+}
+
+.Fila6{
+	display: grid;
+	grid-area: Fila6;
+	grid-template-areas: 
+	" EspCol6_1 Medio6 EspCol6_2";
+    grid-template-columns: 2fr 25fr 2fr;
+}
+
+.EspCol6_1{
+	grid-area: EspCol6_1;
+   }
+
+.Espacio7{
+	grid-area: Espacio7;
+}
+
+   .Medio6{
+	grid-area: Medio6;
+   }
+
+   .EspCol6_2{
+	grid-area: EspCol6_2;
+   }
+/* -------- 📛Fila6📛 -------- */
+/* -------- 🟦Medio6🟦 -------- */
+.Medio6{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro6"
+	" Texto6";
+    grid-template-rows: 210px 242px;
+   }
+
+    .Cuadro6{
+	grid-area: Cuadro6;
+	display: grid;
+	grid-template-areas: 
+	" EspacioMovil6_1 EspacioMovil6_2 EspacioMovil6_3";
+    grid-template-columns: 3fr 10fr 3fr;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+.Cuadro6:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.EspacioMovil6_1{
+        grid-area: EspacioMovil6_1;
+	}
+
+	.EspacioMovil6_2{
+        grid-area: EspacioMovil6_2;
+	}
+
+	.ImagenCuadro6{
+		width: 175px;
+		height: 175px;
+		border-radius: 50px;
+		position: relative;
+		left: 27px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Ponquesito.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.EspacioMovil6_3{
+        grid-area: EspacioMovil6_3;
+	}
+
+	.Texto6{
+		grid-area: Texto6;
+		border-radius: 15px;
+		height: 269px;
+	}
+/* -------- 🟦Medio6🟦 -------- */
+/* ------------------------------------------------  */
+
+
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐂𝐨𝐧𝐭𝐚𝐜𝐭𝐨.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+/* ✅ Inicio de grid-container ✅  */
+.grid-containerCon {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	" header header header"
+	" menú menú menú"
+	" mainCon mainCon mainCon"
+	" footer footer footer";
+	grid-template-rows: 80px 50px 569px 90px;
+	grid-template-columns: 200px;
+   }
+
+header{
+    grid-area: header;
+	background-image: url("../Imagenes/Header-y-Footer/HeaderFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.menú{
+    grid-area: menú;
+	background-color: rgb(39, 38, 38);
+}
+
+ .mainCon{
+	grid-area: mainCon;
+	background-color: rgb(160, 239, 245);
+}
+
+ footer{
+    grid-area: footer; 
+	background-image: url("../Imagenes/Header-y-Footer/FooterFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+
+/* ✅ Final de grid-container ✅  */
+.mainCon{
+	display: grid;
+	grid-template-areas: 
+        " vacio"
+		" FilaC"
+		" vacio2"
+		" FilaC2"
+		" vacio3"
+		" FilaC3"
+		" vacio4"
+		" FilaC4"
+		" vacio5"
+		" FilaC5"
+		" FilaButton";
+		overflow-x: hidden;
+		grid-template-rows: 10px 60px 10px
+		60px 10px 60px
+		10px 60px 10px
+		60px 110px;
+	}
+
+/* -------- 📛FilaC📛 -------- */
+.vacio{
+	grid-area: vacio;
+}
+
+.FilaC{
+	grid-area: FilaC;
+}
+/* -------- 📛FilaC📛 -------- */
+
+
+.vacio2{
+	grid-area: vacio2;
+}
+
+.FilaC2{
+	grid-area: FilaC2;
+}
+
+
+.vacio3{
+	grid-area: vacio3;
+}
+
+.FilaC3{
+	grid-area: FilaC3;
+}
+
+
+.vacio4{
+	grid-area: vacio4;
+}
+
+.FilaC4{
+	grid-area: FilaC4;
+}
+
+
+.vacio5{
+	grid-area: vacio5;
+}
+
+.FilaC5{
+	grid-area: FilaC5;
+}
+
+/* -------- 📛Redes📛 -------- */
+
+.Whatsapp{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Whatsapp.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Whatsapp:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextWhatsapp{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+	font-size: 17px;
+}
+
+.Correo{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Correo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Correo:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextCorreo{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+	font-size: 17px;
+}
+
+.Facebook{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Facebook.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Facebook:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextFacebook{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+	font-size: 17px;
+}
+
+.Instagram{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Instagram.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Instagram:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextInstagram{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+	font-size: 17px;
+}
+/* -------- 📛Redes📛 -------- */
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐂𝐨𝐧𝐭𝐚𝐜𝐭𝐨.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐒𝐨𝐛𝐫𝐞𝐍𝐨𝐬𝐨𝐭𝐫𝐨𝐬.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+.TextSNsec{
+	font-size: 20px;
+	display: none;
+}
+
+.TextSNsecMobile{
+	font-size: 20px;
+}
+
+.GifSN{
+	width: 463px;
+	height: 409px;
+}
+
+.TextMaps{
+	font-size: 35px;
+}
+
+iframe{
+	width: 440px;
+}
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐒𝐨𝐛𝐫𝐞𝐍𝐨𝐬𝐨𝐭𝐫𝐨𝐬.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐎𝐭𝐫𝐚𝐬𝐏𝐚𝐠.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+/* ✅ Inicio de grid-container ✅  */
+.grid-containerOP {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	" header header header"
+	" menú menú menú"
+	" MainMN MainMN MainMN"
+	" footerOP footerOP footerOP";
+	grid-template-rows: 80px 50px 569px 90px;
+	grid-template-columns: 200px;
+   }
+
+header{
+    grid-area: header;
+	background-image: url("../Imagenes/Header-y-Footer/HeaderFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.menú{
+    grid-area: menú;
+	background-color: rgb(39, 38, 38);
+}
+
+.MainMN{
+	grid-area: MainMN;
+	background-color: rgb(160, 239, 245);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow-y: scroll;
+}
+
+.footerOP{
+    grid-area: footerOP; 
+	background-image: url("../Imagenes/Header-y-Footer/FooterFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+/* ✅ Final de grid-container ✅  */
+
+.MainMN{
+	display: grid;
+	grid-template-areas:
+	" vacioMN" 
+	" Fila1MN"
+	" vacioMN2"
+
+	" Fila2MN"
+	" vacioMN3"
+	
+	
+	" Fila3MN"
+	" vacioMN4"
+	
+	
+	" Fila4MN"
+	" vacioMN5";
+	grid-template-rows: 30px 70px 30px 460px 30px 460px 30px 460px 30px;
+}
+
+	.vacioMN{
+        grid-area: vacioMN;
+	}
+
+	.Fila1MN{
+		grid-area: Fila1MN;
+	}
+
+	.vacioMN2{
+        grid-area: vacioMN2;
+	}
+
+	.Fila2MN{
+		grid-area: Fila2MN;
+	}
+
+	.vacioMN3{
+        grid-area: vacioMN3;
+	}
+
+	.Fila3MN{
+		grid-area: Fila3MN;
+	}
+
+	.vacioMN4{
+        grid-area: vacioMN4;
+	}
+
+	.Fila4MN{
+		grid-area: Fila4MN;
+	}
+
+	.vacioMN5{
+        grid-area: vacioMN5;
+	}
+
+/* ---------✅ Fila2MN ✅---------  */
+.Fila2MN{
+    display: grid;
+	grid-template-areas: " SpaceA2 Cont2 SpaceB2";
+	grid-template-columns: 1fr 12fr 1fr;
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+.Fila2MN:hover{
+    transform: scale(1.1);
+}
+
+.SpaceA2{
+	grid-area: SpaceA2;
+}
+
+.Cont2{
+    grid-area: Cont2;
+	border-radius: 50px;
+}
+
+.SpaceB2{
+	grid-area: SpaceB2;
+}
+
+/* ---------⛔Cont2⛔---------  */
+.Cont2{
+    display: grid;
+	grid-template-areas: 
+	" IMG_Rec2"
+	" ColRec2";
+	grid-template-rows: 190px 270px;
+}
+
+.IMG_Rec2{
+    grid-area: IMG_Rec2;
+    border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	background-image: url("../Imagenes/IMGOtrasPag/SALVS.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ColRec2{
+	grid-area: ColRec2;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+/* ---------⛔Cont2⛔---------  */
+
+/* ---------🔵ColRec2🔵---------  */
+.ColRec2{
+	display: grid;
+	grid-template-areas: 
+	" TextRec2"
+	" FilaCont2"
+	" FilaLink2";
+	grid-template-rows: 50px 170px 50px;
+}
+
+.TextRec2{
+	grid-area: TextRec2;
+}
+
+.TituloRec2{
+	text-align: center;
+	font-size: 30px;
+}
+
+.FilaCont2{
+    grid-area: FilaCont2;
+}
+
+.FilaLink2{
+	grid-area: FilaLink2;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+/* ---------🔵ColRec2🔵---------  */
+/* ---------✅ Fila2MN ✅---------  */
+
+
+
+/* ---------✅ Fila3MN ✅---------  */
+.Fila3MN{
+    display: grid;
+	grid-template-areas: " SpaceA3 Cont3 SpaceB3";
+	grid-template-columns: 1fr 12fr 1fr;
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+.Fila3MN:hover{
+    transform: scale(1.1);
+}
+
+.SpaceA3{
+	grid-area: SpaceA3;
+}
+
+.Cont3{
+    grid-area: Cont3;
+	border-radius: 50px;
+}
+
+.SpaceB3{
+	grid-area: SpaceB3;
+}
+/* ---------⛔Cont3⛔---------  */
+.Cont3{
+    display: grid;
+	grid-template-areas: 
+	" IMG_Rec3"
+	" ColRec3";
+	grid-template-rows: 190px 270px;
+}
+
+.IMG_Rec3{
+    grid-area: IMG_Rec3;
+    border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	background-image: url("../Imagenes/IMGOtrasPag/webos_fritos.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ColRec3{
+	grid-area: ColRec3;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+/* ---------⛔Cont3⛔---------  */
+/* ---------🔵ColRec3🔵---------  */
+.ColRec3{
+	display: grid;
+	grid-template-areas: 
+	" TextRec3"
+	" FilaCont3"
+	" FilaLink3";
+	grid-template-rows: 50px 170px 50px;
+}
+
+.TextRec3{
+	grid-area: TextRec3;
+}
+
+.TituloRec3{
+	text-align: center;
+	font-size: 30px;
+}
+
+.FilaCont3{
+    grid-area: FilaCont3;
+}
+
+.FilaLink3{
+	grid-area: FilaLink3;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+/* ---------🔵ColRec3🔵---------  */
+/* ---------✅ Fila3MN ✅---------  */
+
+
+/* ---------✅ Fila4MN ✅---------  */
+.Fila4MN{
+    display: grid;
+	grid-template-areas: " SpaceA4 Cont4 SpaceB4";
+	grid-template-columns: 1fr 12fr 1fr;
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+.Fila4MN:hover{
+    transform: scale(1.1);
+}
+
+.SpaceA4{
+	grid-area: SpaceA4;
+}
+
+.Cont4{
+    grid-area: Cont4;
+	border-radius: 50px;
+}
+
+.SpaceB4{
+	grid-area: SpaceB4;
+}
+/* ---------⛔Cont4⛔---------  */
+.Cont4{
+    display: grid;
+	grid-template-areas: 
+	" IMG_Rec4"
+	" ColRec4";
+	grid-template-rows: 190px 270px;
+}
+
+.IMG_Rec4{
+    grid-area: IMG_Rec4;
+    border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	background-image: url("../Imagenes/IMGOtrasPag/Maís.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ColRec4{
+	grid-area: ColRec4;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+/* ---------⛔Cont4⛔---------  */
+/* ---------🔵ColRec4🔵---------  */
+.ColRec4{
+	display: grid;
+	grid-template-areas: 
+	" TextRec4"
+	" FilaCont4"
+	" FilaLink4";
+	grid-template-rows: 50px 170px 50px;
+}
+
+.TextRec4{
+	grid-area: TextRec4;
+}
+
+.TituloRec4{
+	text-align: center;
+	font-size: 30px;
+}
+
+.FilaCont4{
+    grid-area: FilaCont4;
+}
+
+.FilaLink4{
+	grid-area: FilaLink4;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+.TituloLink{
+	position: relative;
+	left: 90px;
+}
+/* ---------🔵ColRec4🔵---------  */
+/* ---------✅ Fila4MN ✅---------  */
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐎𝐭𝐫𝐚𝐬𝐏𝐚𝐠.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+}
+/* ✅ Final de Media query Mobile✅  */
+
+
+
+
+/* ✅ Inicio de Media query PC✅  */
+@media screen and (min-width: 1200px) {
+	.grid-container {
+		height: 100vh;
+		display: grid;
+		grid-template-areas: 
+		" header header header"
+		" menú menú menú"
+		" main main main"
+		" footer footer footer";
+		grid-template-rows: 80px 50px 569px 90px;
+		grid-template-columns: 200px;
+	   }
+
+.main{
+display: grid;
+grid-template-areas: 
+	" Espacio1"
+	" Fila1"
+	" Espacio2"
+	" Fila2"
+	" Espacio3"
+	" Fila3"
+	" Espacio4"
+	" Fila4"
+	" Espacio5"
+	" Fila5"
+	" Espacio6"
+	" Fila6"
+	"Espacio7";
+	overflow-y: scroll;
+	grid-template-rows: 30px 200px 30px 200px 30px 200px
+	30px 200px 30px 200px 30px 200px 30px;
+}
+
+/* -------- 📛Fila1📛 -------- */
+.Espacio1{
+    grid-area: Espacio1;
+}
+
+.Fila1{
+	display: grid;
+	grid-area: Fila1;
+	grid-template-areas: 
+	" EspCol1_1 Medio1 EspCol1_2";
+    grid-template-columns: 2fr 20fr 2fr;
+}
+
+.EspCol1_1{
+	grid-area: EspCol1_1;
+   }
+
+   .Medio1{
+	grid-area: Medio1;
+   }
+
+   .EspCol1_2{
+	grid-area: EspCol1_2;
+   }
+/* -------- 📛Fila1📛 -------- */
+/* -------- 🟦Medio1🟦 -------- */
+.Medio1{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro1 Texto1";
+    grid-template-columns: 210px 1fr;
+   }
+
+    .Cuadro1{
+		grid-area: Cuadro1;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+	.Cuadro1:hover {
+		animation: Mover 1s; 
+        animation-iteration-count: infinite; 
+	   }
+
+	   @keyframes Mover { 
+
+		0% {
+			transform: translateY(-4px);
+		}
+
+	    10% {
+			transform: translateY(-8px);
+		}
+
+	    20% {
+			transform: translateY(-12px);
+		}
+
+		40% {
+			transform: translateY(-16px);
+		} 
+
+		   
+
+		50% {
+			transform: translateY(-12px);
+		}
+
+	    60% {
+			transform: translateY(-8px);
+		}
+
+		70% {
+			transform: translateY(-4px);
+		} 
+
+		80% {
+			transform: translateY(4px);
+		} 
+	} 
+/* --------------🌐Animación🌐-------------- */
+
+	.ImagenCuadro{
+		width: 165px;
+		height: 165px;
+		border-radius: 50px;
+		position: relative;
+		left: 23px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Quesillo.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.Texto1{
+		grid-area: Texto1;
+		border-radius: 50px;
+		width: 1000px;
+	}
+
+	.Descripcion{
+		position: relative;
+		left: 25px;
+		top: 30px;
+	}
+/* -------- 🟦Medio1🟦 -------- */
+
+
+/* -------- 📛Fila2📛 -------- */
+.Espacio2{
+    grid-area: Espacio2;
+}
+
+.Fila2{
+	display: grid;
+	grid-area: Fila2;
+	grid-template-areas: 
+	" EspCol2_1 Medio2 EspCol2_2";
+    grid-template-columns: 2fr 20fr 2fr;
+}
+
+.EspCol2_1{
+	grid-area: EspCol2_1;
+   }
+
+   .Medio2{
+	grid-area: Medio2;
+   }
+
+   .EspCol2_2{
+	grid-area: EspCol2_2;
+   }
+/* -------- 📛Fila2📛 -------- */
+/* -------- 🟦Medio2🟦 -------- */
+.Medio2{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro2 Texto2";
+    grid-template-columns: 210px 1fr;
+   }
+
+    .Cuadro2{
+		grid-area: Cuadro2;
+	}
+
+	/* --------------🌐Animación🌐-------------- */
+	.Cuadro2:hover {
+		animation: Mover 1s; 
+        animation-iteration-count: infinite; 
+	   }
+
+	   @keyframes Mover { 
+
+		0% {
+			transform: translateY(-4px);
+		}
+
+	    10% {
+			transform: translateY(-8px);
+		}
+
+	    20% {
+			transform: translateY(-12px);
+		}
+
+		40% {
+			transform: translateY(-16px);
+		} 
+
+		   
+
+		50% {
+			transform: translateY(-12px);
+		}
+
+	    60% {
+			transform: translateY(-8px);
+		}
+
+		70% {
+			transform: translateY(-4px);
+		} 
+
+		80% {
+			transform: translateY(4px);
+		} 
+	} 
+/* --------------🌐Animación🌐-------------- */
+
+	.ImagenCuadro2{
+		width: 165px;
+		height: 165px;
+		border-radius: 50px;
+		position: relative;
+		left: 23px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Tartas.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.Texto2{
+		grid-area: Texto2;
+		border-radius: 50px;
+		width: 1000px;
+	}
+
+	.Descripcion2{
+		position: relative;
+		left: 25px;
+		top: 30px;
+	}
+/* -------- 🟦Medio2🟦 -------- */
+
+
+/* -------- 📛Fila3📛 -------- */
+.Espacio3{
+    grid-area: Espacio3;
+}
+
+.Fila3{
+	display: grid;
+	grid-area: Fila3;
+	grid-template-areas: 
+	" EspCol3_1 Medio3 EspCol3_2";
+    grid-template-columns: 2fr 20fr 2fr;
+}
+
+.EspCol3_1{
+	grid-area: EspCol3_1;
+   }
+
+   .Medio3{
+	grid-area: Medio3;
+   }
+
+   .EspCol3_2{
+	grid-area: EspCol3_2;
+   }
+/* -------- 📛Fila3📛 -------- */
+/* -------- 🟦Medio3🟦 -------- */
+.Medio3{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro3 Texto3";
+    grid-template-columns: 210px 1fr;
+   }
+
+    .Cuadro3{
+		grid-area: Cuadro3;
+	}
+
+	/* --------------🌐Animación🌐-------------- */
+	.Cuadro3:hover {
+		animation: Mover 1s; 
+        animation-iteration-count: infinite; 
+	   }
+
+	   @keyframes Mover { 
+
+		0% {
+			transform: translateY(-4px);
+		}
+
+	    10% {
+			transform: translateY(-8px);
+		}
+
+	    20% {
+			transform: translateY(-12px);
+		}
+
+		40% {
+			transform: translateY(-16px);
+		} 
+
+		   
+
+		50% {
+			transform: translateY(-12px);
+		}
+
+	    60% {
+			transform: translateY(-8px);
+		}
+
+		70% {
+			transform: translateY(-4px);
+		} 
+
+		80% {
+			transform: translateY(4px);
+		} 
+	} 
+/* --------------🌐Animación🌐-------------- */
+
+	.ImagenCuadro3{
+		width: 165px;
+		height: 165px;
+		border-radius: 50px;
+		position: relative;
+		left: 23px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Donas.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.Texto3{
+		grid-area: Texto3;
+		border-radius: 50px;
+		width: 1000px;
+	}
+
+	.Descripcion3{
+		position: relative;
+		left: 25px;
+		top: 30px;
+	}
+/* -------- 🟦Medio3🟦 -------- */
+
+
+/* -------- 📛Fila4📛 -------- */
+.Espacio4{
+    grid-area: Espacio4;
+}
+
+.Fila4{
+	display: grid;
+	grid-area: Fila4;
+	grid-template-areas: 
+	" EspCol4_1 Medio4 EspCol4_2";
+    grid-template-columns: 2fr 20fr 2fr;
+}
+
+.EspCol4_1{
+	grid-area: EspCol4_1;
+   }
+
+   .Medio4{
+	grid-area: Medio4;
+   }
+
+   .EspCol4_2{
+	grid-area: EspCol4_2;
+   }
+/* -------- 📛Fila4📛 -------- */
+/* -------- 🟦Medio4🟦 -------- */
+.Medio4{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro4 Texto4";
+    grid-template-columns: 210px 1fr;
+   }
+
+    .Cuadro4{
+		grid-area: Cuadro4;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+	.Cuadro4:hover {
+		animation: Mover 1s; 
+        animation-iteration-count: infinite; 
+	   }
+
+	   @keyframes Mover { 
+
+		0% {
+			transform: translateY(-4px);
+		}
+
+	    10% {
+			transform: translateY(-8px);
+		}
+
+	    20% {
+			transform: translateY(-12px);
+		}
+
+		40% {
+			transform: translateY(-16px);
+		} 
+
+		   
+
+		50% {
+			transform: translateY(-12px);
+		}
+
+	    60% {
+			transform: translateY(-8px);
+		}
+
+		70% {
+			transform: translateY(-4px);
+		} 
+
+		80% {
+			transform: translateY(4px);
+		} 
+	} 
+/* --------------🌐Animación🌐-------------- */
+
+	.ImagenCuadro4{
+		width: 165px;
+		height: 165px;
+		border-radius: 50px;
+		position: relative;
+		left: 23px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Helado.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.Texto4{
+		grid-area: Texto4;
+		border-radius: 50px;
+		width: 1000px;
+	}
+
+	.Descripcion4{
+		position: relative;
+		left: 25px;
+		top: 30px;
+	}
+/* -------- 🟦Medio4🟦 -------- */
+
+
+/* -------- 📛Fila5📛 -------- */
+.Espacio5{
+    grid-area: Espacio5;
+}
+
+.Fila5{
+	display: grid;
+	grid-area: Fila5;
+	grid-template-areas: 
+	" EspCol5_1 Medio5 EspCol5_2";
+    grid-template-columns: 2fr 20fr 2fr;
+}
+
+.EspCol5_1{
+	grid-area: EspCol5_1;
+   }
+
+   .Medio5{
+	grid-area: Medio5;
+   }
+
+   .EspCol5_2{
+	grid-area: EspCol5_2;
+   }
+/* -------- 📛Fila5📛 -------- */
+/* -------- 🟦Medio5🟦 -------- */
+.Medio5{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro5 Texto5";
+    grid-template-columns: 210px 1fr;
+   }
+
+    .Cuadro5{
+		grid-area: Cuadro5;
+	}
+
+/* --------------🌐Animación🌐-------------- */
+.Cuadro5:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.ImagenCuadro5{
+		width: 165px;
+		height: 165px;
+		border-radius: 50px;
+		position: relative;
+		left: 23px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/PieDeLimon.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.Texto5{
+		grid-area: Texto5;
+		border-radius: 50px;
+		width: 1000px;
+	}
+
+	.Descripcion5{
+		position: relative;
+		left: 25px;
+		top: 30px;
+	}
+/* -------- 🟦Medio5🟦 -------- */
+
+
+/* -------- 📛Fila6📛 -------- */
+.Espacio6{
+    grid-area: Espacio6;
+}
+
+.Fila6{
+	display: grid;
+	grid-area: Fila6;
+	grid-template-areas: 
+	" EspCol6_1 Medio6 EspCol6_2";
+    grid-template-columns: 2fr 20fr 2fr;
+}
+
+.EspCol6_1{
+	grid-area: EspCol6_1;
+   }
+
+.Espacio7{
+	grid-area: Espacio7;
+}
+
+   .Medio6{
+	grid-area: Medio6;
+   }
+
+   .EspCol6_2{
+	grid-area: EspCol6_2;
+   }
+/* -------- 📛Fila6📛 -------- */
+/* -------- 🟦Medio6🟦 -------- */
+.Medio6{
+	display: grid;
+	grid-template-areas: 
+	" Cuadro6 Texto6";
+    grid-template-columns: 210px 1fr;
+   }
+
+    .Cuadro6{
+		grid-area: Cuadro6;
+	}
+/* --------------🌐Animación🌐-------------- */
+.Cuadro6:hover {
+	animation: Mover 1s; 
+	animation-iteration-count: infinite; 
+   }
+
+   @keyframes Mover { 
+
+	0% {
+		transform: translateY(-4px);
+	}
+
+	10% {
+		transform: translateY(-8px);
+	}
+
+	20% {
+		transform: translateY(-12px);
+	}
+
+	40% {
+		transform: translateY(-16px);
+	} 
+
+	   
+
+	50% {
+		transform: translateY(-12px);
+	}
+
+	60% {
+		transform: translateY(-8px);
+	}
+
+	70% {
+		transform: translateY(-4px);
+	} 
+
+	80% {
+		transform: translateY(4px);
+	} 
+} 
+/* --------------🌐Animación🌐-------------- */
+
+	.ImagenCuadro6{
+		width: 165px;
+		height: 165px;
+		border-radius: 50px;
+		position: relative;
+		left: 23px;
+		top: 18px;
+
+		background-image: url("../Imagenes/Postres/Ponquesito.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.Texto6{
+		grid-area: Texto6;
+		border-radius: 50px;
+		width: 1000px;
+	}
+
+	.Descripcion6{
+		position: relative;
+		left: 25px;
+		top: 30px;
+	}
+/* -------- 🟦Medio6🟦 -------- */
+
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐂𝐨𝐧𝐭𝐚𝐜𝐭𝐨.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+/* ✅ Inicio de grid-container ✅  */
+.grid-containerCon {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	" header header header"
+	" menú menú menú"
+	" mainCon mainCon mainCon"
+	" footer footer footer";
+	grid-template-rows: 80px 50px 569px 90px;
+	grid-template-columns: 200px;
+   }
+
+header{
+    grid-area: header;
+	background-image: url("../Imagenes/Header-y-Footer/HeaderFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.menú{
+    grid-area: menú;
+	background-color: rgb(39, 38, 38);
+}
+
+ .mainCon{
+	grid-area: mainCon;
+	background-color: rgb(160, 239, 245);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+ footer{
+    grid-area: footer; 
+	background-image: url("../Imagenes/Header-y-Footer/FooterFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+/* ✅ Final de grid-container ✅  */
+
+.mainCon{
+	display: grid;
+	grid-template-areas: 
+        " vacio"
+		" FilaC"
+		" vacio2"
+		" FilaC2"
+		" vacio3"
+		" FilaC3"
+		" vacio4"
+		" FilaC4"
+		" vacio5"
+		" FilaC5"
+		" vacio6";
+		overflow-x: hidden;
+		grid-template-rows: 10px 60px 10px
+		60px 10px 60px
+		10px 60px 10px
+		60px 10px;
+	}
+
+/* -------- 📛FilaC📛 -------- */
+.vacio{
+	grid-area: vacio;
+}
+
+.FilaC{
+	grid-area: FilaC;
+}
+/* -------- 📛FilaC📛 -------- */
+
+
+.vacio2{
+	grid-area: vacio2;
+}
+
+.FilaC2{
+	grid-area: FilaC2;
+}
+
+
+.vacio3{
+	grid-area: vacio3;
+}
+
+.FilaC3{
+	grid-area: FilaC3;
+}
+
+
+.vacio4{
+	grid-area: vacio4;
+}
+
+.FilaC4{
+	grid-area: FilaC4;
+}
+
+
+.vacio5{
+	grid-area: vacio5;
+}
+
+.FilaC5{
+	grid-area: FilaC5;
+}
+
+.vacio6{
+	grid-area: vacio6;
+}
+
+/* -------- 📛Redes📛 -------- */
+
+.Whatsapp{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Whatsapp.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Whatsapp:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextWhatsapp{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+}
+
+.Correo{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Correo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Correo:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextCorreo{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+}
+
+.Facebook{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Facebook.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Facebook:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextFacebook{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+}
+
+.Instagram{
+	height: 40px;
+	width: 40px;
+	background-image: url("../Imagenes/Redes/Instagram.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: 8px;
+	left: 8px;
+}
+
+/* --------------🌐Animación🌐-------------- */
+.Instagram:hover {
+	animation: batir 0.5s; 
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes batir {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+     20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    } 
+}
+/* --------------🌐Animación🌐-------------- */
+
+.TextInstagram{
+	position: relative;
+	bottom: 20px;
+	left: 55px;
+	font-family: "FuenteTerciaria";
+}
+/* -------- 📛Redes📛 -------- */
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐂𝐨𝐧𝐭𝐚𝐜𝐭𝐨.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐒𝐨𝐛𝐫𝐞𝐍𝐨𝐬𝐨𝐭𝐫𝐨𝐬.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+.TextSNsec{
+	font-size: 20px;
+}
+
+.TextSNsecMobile{
+	display: none;
+}
+
+.GifSN{
+	width: 890px;
+	height: 409px;
+}
+
+.TextMaps{
+	font-size: 35px;
+}
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐒𝐨𝐛𝐫𝐞𝐍𝐨𝐬𝐨𝐭𝐫𝐨𝐬.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+
+
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐎𝐭𝐫𝐚𝐬𝐏𝐚𝐠.𝐡𝐭𝐦𝐥.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+/* ✅ Inicio de grid-container ✅  */
+.grid-containerOP {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	" header header header"
+	" menú menú menú"
+	" MainMN MainMN MainMN"
+	" footerOP footerOP footerOP";
+	grid-template-rows: 80px 50px 569px 90px;
+	grid-template-columns: 200px;
+   }
+
+header{
+    grid-area: header;
+	background-image: url("../Imagenes/Header-y-Footer/HeaderFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.menú{
+    grid-area: menú;
+	background-color: rgb(39, 38, 38);
+}
+
+.MainMN{
+	grid-area: MainMN;
+	background-color: rgb(160, 239, 245);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow-y: scroll;
+}
+
+ .footerOP{
+    grid-area: footerOP; 
+	background-image: url("../Imagenes/Header-y-Footer/FooterFullPostres.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+/* ✅ Final de grid-container ✅  */
+
+.MainMN{
+	display: grid;
+	grid-template-areas:
+	" vacioMN" 
+	" Fila1MN"
+	" vacioMN2"
+
+	" Fila2MN"
+    " vacioMN3"
+
+	" Fila3MN"
+	" vacioMN4"
+	
+	" Fila4MN"
+	" vacioMN5";
+	grid-template-rows: 20px 70px 20px 280px 20px 280px 20px 280px 10px;
+}
+
+	.vacioMN{
+        grid-area: vacioMN;
+	}
+
+	.Fila1Menu{
+		grid-area: Fila1Menu;
+	}
+
+	.vacioMN2{
+        grid-area: vacioMN2;
+	}
+
+	.Fila2MN{
+		grid-area: Fila2MN;
+	}
+
+	.vacioMN3{
+        grid-area: vacioMN3;
+	}
+
+	.Fila3MN{
+		grid-area: Fila3MN;
+	}
+
+	.vacioMN4{
+        grid-area: vacioMN4;
+	}
+
+	.Fila4MN{
+		grid-area: Fila4MN;
+	}
+
+	.vacioMN5{
+        grid-area: vacioMN5;
+	}
+/* ---------✅ Fila2MN ✅---------  */
+.Fila2MN{
+    display: grid;
+	grid-template-areas: " SpaceA2 Cont2 SpaceB2";
+	grid-template-columns: 1fr 5fr 1fr;
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+.Fila2MN:hover{
+    transform: scale(1.1);
+}
+
+.SpaceA2{
+	grid-area: SpaceA2;
+}
+
+.Cont2{
+    grid-area: Cont2;
+	border-radius: 50px;
+}
+
+.SpaceB2{
+	grid-area: SpaceB2;
+}
+/* ---------✅ Fila2MN ✅---------  */
+/* ---------⛔Cont2⛔---------  */
+.Cont2{
+    display: grid;
+	grid-template-areas: " IMG_Rec2 ColRec2";
+	grid-template-columns: 300px 831px;
+}
+
+.IMG_Rec2{
+    grid-area: IMG_Rec2;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	background-image: url("../Imagenes/IMGOtrasPag/SALVS.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ColRec2{
+	grid-area: ColRec2;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+/* ---------⛔Cont2⛔---------  */
+/* ---------🔵ColRec2🔵---------  */
+.ColRec2{
+	display: grid;
+	grid-template-areas: 
+	" TextRec2"
+	" FilaCont2"
+	" FilaLink2";
+	grid-template-rows: 50px 190px 40px;
+}
+
+.TextRec2{
+	grid-area: TextRec2;
+	border-top-right-radius: 30px;
+}
+
+.TituloRec2{
+	text-align: center;
+	font-size: 30px;
+}
+
+.TextRecsec{
+	font-size: 20px;
+}
+
+.FilaCont2{
+	grid-area: FilaCont2;
+}
+
+.FilaLink2{
+	grid-area: FilaLink2;
+	border-bottom-right-radius: 30px;
+}
+/* ---------🔵ColRec🔵---------  */
+
+
+
+/* ---------✅ Fila3MN ✅---------  */
+.Fila3MN{
+    display: grid;
+	grid-template-areas: " SpaceA3 Cont3 SpaceB3";
+	grid-template-columns: 1fr 5fr 1fr;
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+.Fila3MN:hover{
+    transform: scale(1.1);
+}
+
+.SpaceA3{
+	grid-area: SpaceA3;
+}
+
+.Cont3{
+    grid-area: Cont3;
+	border-radius: 50px;
+}
+
+.SpaceB3{
+	grid-area: SpaceB3;
+}
+/* ---------✅ Fila3MN ✅---------  */
+/* ---------⛔Cont3⛔---------  */
+.Cont3{
+    display: grid;
+	grid-template-areas: " IMG_Rec3 ColRec3";
+	grid-template-columns: 300px 831px;
+}
+
+.IMG_Rec3{
+    grid-area: IMG_Rec3;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	background-image: url("../Imagenes/IMGOtrasPag/webos_fritos.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ColRec3{
+	grid-area: ColRec3;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+/* ---------⛔Cont3⛔---------  */
+/* ---------🔵ColRec3🔵---------  */
+.ColRec3{
+	display: grid;
+	grid-template-areas: 
+	" TextRec3"
+	" FilaCont3"
+	" FilaLink3";
+	grid-template-rows: 50px 190px 40px;
+}
+
+.TextRec3{
+	grid-area: TextRec3;
+	border-top-right-radius: 30px;
+}
+
+.TituloRec3{
+	text-align: center;
+	font-size: 30px;
+}
+
+.TextRecsec{
+	font-size: 20px;
+}
+
+.FilaCont3{
+	grid-area: FilaCont3;
+}
+
+.FilaLink3{
+	grid-area: FilaLink3;
+	border-bottom-right-radius: 30px;
+}
+/* ---------🔵ColRec3🔵---------  */
+
+
+
+/* ---------✅ Fila4MN ✅---------  */
+.Fila4MN{
+    display: grid;
+	grid-template-areas: " SpaceA4 Cont4 SpaceB4";
+	grid-template-columns: 1fr 5fr 1fr;
+	transition: 0.5s;
+	object-fit: cover;
+}
+
+.Fila4MN:hover{
+    transform: scale(1.1);
+}
+
+.SpaceA4{
+	grid-area: SpaceA4;
+}
+
+.Cont4{
+    grid-area: Cont4;
+	border-radius: 50px;
+}
+
+.SpaceB4{
+	grid-area: SpaceB4;
+}
+/* ---------✅ Fila4MN ✅---------  */
+/* ---------⛔Cont4⛔---------  */
+.Cont4{
+    display: grid;
+	grid-template-areas: " IMG_Rec4 ColRec4";
+	grid-template-columns: 300px 831px;
+}
+
+.IMG_Rec4{
+    grid-area: IMG_Rec4;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	background-image: url("../Imagenes/IMGOtrasPag/Maís.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ColRec4{
+	grid-area: ColRec4;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+/* ---------⛔Cont4⛔---------  */
+/* ---------🔵ColRec4🔵---------  */
+.ColRec4{
+	display: grid;
+	grid-template-areas: 
+	" TextRec4"
+	" FilaCont4"
+	" FilaLink4";
+	grid-template-rows: 50px 190px 40px;
+}
+
+.TextRec4{
+	grid-area: TextRec4;
+	border-top-right-radius: 30px;
+}
+
+.TituloRec4{
+	text-align: center;
+	font-size: 30px;
+}
+
+.TextRecsec{
+	font-size: 20px;
+}
+
+.FilaCont4{
+	grid-area: FilaCont4;
+}
+
+.FilaLink4{
+	grid-area: FilaLink4;
+	border-bottom-right-radius: 30px;
+}
+
+.TituloLink{
+	position: relative;
+	left: 300px;
+}
+/* ---------🔵ColRec🔵---------  */
+/* 『⸻⸻🔷𝐂𝐨𝐬𝐚𝐬 𝐝𝐞 𝐎𝐭𝐫𝐚𝐬𝐏𝐚𝐠.𝐡𝐭𝐦𝐥🔷⸻⸻』 */
+}
+/* ✅ Final de Media query PC ✅  */
+
+
+
+
+
+
+
+
+
+
